@@ -5,10 +5,8 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <div className='nav-container'>
-        {/* LOGO */}
         <img src={logo} alt='Kod biologii' className='logo' />
 
-        {/* MENU */}
         <div className='menu'>
           <a>Strona główna</a>
           <a>O mnie</a>
@@ -17,7 +15,6 @@ export default function Navbar() {
           <a>Kontakt</a>
         </div>
 
-        {/* BUTTON */}
         <button className='btn'>
           <LuLeaf className='btn-icon' />
           Umów lekcję

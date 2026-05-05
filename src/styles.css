@@ -172,22 +172,95 @@ body {
 }
 
 /* ===== ABOUT SECTION ===== */
-.about {
+.about-me {
   background: #f8f3ef;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
-.about .container {
-  max-width: 800px;
+/* GRID */
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.about h2 {
-  margin-bottom: 20px;
+/* LEFT */
+.about-top {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #6b7d6b;
 }
 
-.about p {
-  font-family: 'Inter', sans-serif;
+.about-left h2 {
+  font-size: 40px;
+  margin: 10px 0 20px;
+}
+
+.about-desc {
   color: #444;
+  margin-bottom: 30px;
+}
+
+/* LISTA */
+.about-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.about-item svg {
+  font-size: 24px;
+  color: #2e4d2e;
+}
+
+.about-item h4 {
+  margin: 0;
+}
+
+.about-item p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* RIGHT */
+.about-right {
+  position: relative;
+}
+
+.about-right img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.about-quote {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 250px;
+  font-size: 14px;
+}
+
+.about-bottom {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background: #f1ece6;
+  border-radius: 20px;
 }
 
 .benefits {
@@ -209,21 +282,20 @@ body {
   margin-bottom: 50px;
 }
 
-/* GRID */
+/* GRID inside benefits */
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-/* KARTA */
 .card {
   background: white;
   padding: 30px 20px;
   border-radius: 20px;
   text-align: left;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 
@@ -231,7 +303,6 @@ body {
   transform: translateY(-5px);
 }
 
-/* IKONA */
 .card-icon {
   font-size: 26px;
   color: #2e4d2e;
@@ -248,6 +319,110 @@ body {
   font-size: 14px;
   color: #555;
   font-family: 'Inter', sans-serif;
+}
+
+.why {
+  padding: 80px 20px;
+  background: #f8f3ef;
+}
+
+/* GRID inside container*/
+.why-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT */
+.why-top {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #6b7d6b;
+}
+
+.why-left h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.why-desc {
+  font-family: 'Inter', sans-serif;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.why-tags {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #2e4d2e;
+}
+
+.why-box {
+  background: #f1f3ee;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.why-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.why-item svg {
+  color: #2e4d2e;
+  margin-top: 5px;
+}
+
+.why-item h4 {
+  margin: 0;
+}
+
+.why-item p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cta-box {
+  max-width: 1100px;
+  margin: 60px auto 0;
+  padding: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(135deg, #2e4d2e, #1f3d1f);
+  color: white;
+}
+
+.cta-btn {
+  background: white;
+  color: #2e4d2e;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.why-bottom {
+  max-width: 1100px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2e4d2e;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -285,6 +460,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* LARGE SCREENS */
 @media (min-width: 1400px) {
   .hero {
@@ -296,3 +477,26 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-box {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .why-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
