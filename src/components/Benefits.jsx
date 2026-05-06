@@ -3,7 +3,7 @@ import { FaBrain, FaChartLine, FaLeaf } from 'react-icons/fa';
 
 export default function Benefits() {
   return (
-    <section className='benefits'>
+    <section className='benefits' id='offer'>
       <div className='container'>
         <p className='benefits-top'>CO ZAWIERAJĄ KOREPETYCJE?</p>
         <h2>Kompleksowe wsparcie na każdym etapie</h2>
@@ -24,7 +24,7 @@ export default function Benefits() {
           <div className='card'>
             <FaComments className='card-icon' />
             <h3>Pomoc 24/7</h3>
-            <p>Możesz pisać między zajęciami — odpowiadam na pytania.</p>
+            <p>Możesz pisać między zajęciami - odpowiadam na pytania.</p>
           </div>
 
           <div className='card'>
@@ -42,7 +42,7 @@ export default function Benefits() {
           <div className='card'>
             <FaLeaf className='card-icon' />
             <h3>Przyjazna atmosfera</h3>
-            <p>Bez stresu — uczysz się spokojnie i skutecznie.</p>
+            <p>Bez stresu - uczysz się spokojnie i skutecznie.</p>
           </div>
         </div>
       </div>

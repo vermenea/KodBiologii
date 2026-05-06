@@ -1,8 +1,57 @@
+import logo from '../assets/logo1.png';
+import { FaEnvelope, FaPhoneAlt, FaLinkedin } from 'react-icons/fa';
+
 export default function Footer() {
   return (
-    <footer className='container' style={{ borderTop: '1px solid #ddd' }}>
-      <p>Email: kod.biologii@gmail.com</p>
-      <p>Tel: +67 676 767 676</p>
+    <footer id='contact' className='footer'>
+      <div className='footer-container'>
+        {/* LEWA STRONA */}
+        <div className='footer-left'>
+          <img src={logo} alt='Kod biologii' className='footer-logo' />
+        </div>
+
+        {/* ŚRODEK */}
+        <div className='footer-links'>
+          <h4>Nawigacja</h4>
+
+          <a href='#home'>Strona główna</a>
+          <a href='#about'>O mnie</a>
+          <a href='#offer'>Oferta</a>
+          <a href='#pricing'>Cennik</a>
+        </div>
+
+        {/* PRAWA STRONA */}
+        <div className='footer-contact'>
+          <h4>Kontakt</h4>
+
+          <div>
+            <FaEnvelope />
+            <span>vermenea@gmail.com</span>
+          </div>
+
+          <div>
+            <FaPhoneAlt />
+            <span>+48 666 346 150</span>
+          </div>
+
+          <div>
+            <FaLinkedin />
+            <a
+              href='https://www.linkedin.com/in/vermenea/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='footer-linkedin'
+            >
+              Natalia Zagórska
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* DÓŁ */}
+      <div className='footer-bottom'>
+        © {new Date().getFullYear()} Kod Biologii - Natalia Zagórska
+      </div>
     </footer>
   );
 }

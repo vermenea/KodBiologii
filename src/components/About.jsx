@@ -5,7 +5,7 @@ import aboutImg from '../assets/me1.png';
 export default function AboutMe() {
   return (
     <section className='about-me'>
-      <div className='about-container'>
+      <div className='about-container' id='about'>
         {/* // LEWA STRONA  // */}
         <div className='about-left'>
           <p className='about-top'>O MNIE</p>
