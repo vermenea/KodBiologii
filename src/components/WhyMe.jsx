@@ -32,6 +32,7 @@ export default function WhyMe() {
               <h4>Aktualna wiedza maturalna</h4>
               <p>Na bieżąco ze zmianami CKE</p>
             </div>
+            
           </div>
 
           <div className='why-item'>

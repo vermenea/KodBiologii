@@ -27,7 +27,7 @@ export default function Pricing() {
 
             <h3>45 minut</h3>
 
-            <div className='price'>60 zł</div>
+            <div className='price'>80 zł</div>
 
             <p className='price-small'>
               Poznaj mój sposób tłumaczenia i zobacz, czy taka forma nauki Ci
@@ -57,7 +57,7 @@ export default function Pricing() {
 
             <h3>60 minut</h3>
 
-            <div className='price'>80 zł</div>
+            <div className='price'>95 zł</div>
 
             <p className='price-small'>
               Regularne zajęcia dopasowane do poziomu, matury i aktualnych
@@ -88,7 +88,7 @@ export default function Pricing() {
 
             <h3>60 minut</h3>
 
-            <div className='price'>40 zł/osoba</div>
+            <div className='price'>50 zł/osoba</div>
 
             <p className='price-small'>
               Nauka w grupie 2-4 osób, idealna dla przyjaciół.
