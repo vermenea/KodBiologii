@@ -1,4 +1,4 @@
-import logo from '../assets/logo1.png';
+import logo from '../assets/logo.webp';
 import { FaEnvelope, FaPhoneAlt, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
