@@ -13,15 +13,16 @@ export default function AboutMe() {
           <h2>Kim jestem?</h2>
 
           <p className='about-desc'>
-            Mam na imię <b>Natalia</b>, z wykształcenia jestem biologiem
-            medycznym, a obecnie rozwijam się naukowo, pracując nad doktoratem z
-            biologii. Kiedyś też byłam na twoim miejscu - wiem, jak trudne mogą
-            być niektóre tematy i jak łatwo się zniechęcić. Na swojej drodze
-            spotkałam doświadczonego korepetytora, który pomógł mi przejść przez
-            materiał i zdać maturę z dobrym wynikiem, co pozwoliło mi rozwijać
-            się w kierunku naukowym. Teraz chcę przekazać tę wiedzę i
-            doświadczenie dalej, pomagając Tobie osiągnąć sukces na maturze i
-            pokochać biologię tak jak ja!
+            Mam na imię Natalia, z wykształcenia jestem biologiem medycznym, a
+            obecnie rozwijam się naukowo, pracując nad chorobami
+            autoimmunologicznymi skóry. Kiedyś też byłam na twoim miejscu -
+            wiem, jak trudne mogą być niektóre tematy i jak łatwo się
+            zniechęcić. Na swojej drodze spotkałam doświadczonego korepetytora,
+            który pomógł mi przejść przez materiał i zdać maturę z dobrym
+            wynikiem, co pozwoliło mi rozwijać się w kierunku naukowym. Teraz
+            chcę przekazać tę wiedzę i doświadczenie dalej, pomagając Tobie
+            osiągnąć zadowalający wynik na maturze i pokochać biologię tak jak
+            ja!
           </p>
 
           <div className='about-items'>
@@ -37,7 +38,7 @@ export default function AboutMe() {
               <FaBookOpen />
               <div>
                 <h4>Doktorat w toku</h4>
-                <p>Rozwijam się naukowo w biologii</p>
+                <p>Rozwijam się naukowo w biologii molekularnej</p>
               </div>
             </div>
 
@@ -45,7 +46,7 @@ export default function AboutMe() {
               <GiMicroscope />
               <div>
                 <h4>Nauka to moja codzienność</h4>
-                <p>Pracuję z literaturą i badaniami</p>
+                <p>Stale poszerzam wiedzę</p>
               </div>
             </div>
           </div>

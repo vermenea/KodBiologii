@@ -26,7 +26,7 @@ export default function Footer() {
 
           <div>
             <FaEnvelope />
-            <span>vermenea@gmail.com</span>
+            <span>kodbiologii@gmail.com</span>
           </div>
 
           <div>

@@ -32,14 +32,16 @@ export default function WhyMe() {
               <h4>Aktualna wiedza maturalna</h4>
               <p>Na bieżąco ze zmianami CKE</p>
             </div>
-            
           </div>
 
           <div className='why-item'>
             <FaCheckCircle />
             <div>
               <h4>Materiały autorskie</h4>
-              <p>Notatki, schematy i zadania</p>
+              <p>
+                Prezentacje i materiały pomocnicze pomagające uporządkować
+                najważniejsze zagadnienia
+              </p>
             </div>
           </div>
 
@@ -66,8 +68,9 @@ export default function WhyMe() {
           <h3>Gotowy na sukces na maturze?</h3>
           <p>Zrób pierwszy krok i umów się na pierwszą lekcję!</p>
         </div>
-
-        <button className='cta-btn'>Umów pierwszą lekcję</button>
+        <a href='#contact' className='cta-btn'>
+          Umów pierwszą lekcję
+        </a>
       </div>
     </section>
   );

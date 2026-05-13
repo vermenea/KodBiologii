@@ -41,12 +41,7 @@ export default function Pricing() {
               <div>
                 <FaCheck /> omówienie celu
               </div>
-              <div>
-                <FaCheck /> pierwsze materiały
-              </div>
             </div>
-
-            <button className='price-btn light'>Umów lekcję</button>
           </div>
 
           {/* KARTA 2 */}
@@ -57,7 +52,7 @@ export default function Pricing() {
 
             <h3>60 minut</h3>
 
-            <div className='price'>95 zł</div>
+            <div className='price'>100 zł</div>
 
             <p className='price-small'>
               Regularne zajęcia dopasowane do poziomu, matury i aktualnych
@@ -78,8 +73,6 @@ export default function Pricing() {
                 <FaCheck /> kontakt między zajęciami
               </div>
             </div>
-
-            <button className='price-btn'>Wybieram</button>
           </div>
 
           {/* KARTA 3 */}
@@ -108,8 +101,6 @@ export default function Pricing() {
                 <FaCheck /> kontakt między zajęciami
               </div>
             </div>
-
-            <button className='price-btn light'>Umów lekcję</button>
           </div>
         </div>
       </div>
