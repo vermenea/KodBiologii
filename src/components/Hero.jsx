@@ -1,4 +1,4 @@
-import heroImg from '../assets/IMG_0010.jpg';
+import heroImg from '../assets/hero.webp';
 import Features from './Features';
 
 export default function Hero() {

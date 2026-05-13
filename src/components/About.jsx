@@ -1,6 +1,6 @@
 import { FaGraduationCap, FaBookOpen } from 'react-icons/fa';
 import { GiMicroscope } from 'react-icons/gi';
-import aboutImg from '../assets/me1.png';
+import aboutImg from '../assets/about.webp';
 
 export default function AboutMe() {
   return (

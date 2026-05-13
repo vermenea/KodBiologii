@@ -1,4 +1,4 @@
-import logo from '../assets/logo1.png';
+import logo from '../assets/logo.webp';
 import { LuLeaf } from 'react-icons/lu';
 
 export default function Navbar() {
