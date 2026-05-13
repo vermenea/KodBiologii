@@ -739,7 +739,14 @@ body {
 
   font-family: 'Inter', sans-serif;
 }
+.footer-contact a {
+  color: #2e4d2e;
+  text-decoration: none;
+}
 
+.footer-contact a:hover {
+  opacity: 0.8;
+}
 /* BOTTOM */
 
 .footer-bottom {
