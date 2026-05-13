@@ -23,7 +23,7 @@ export default function Benefits() {
 
           <div className='card'>
             <FaComments className='card-icon' />
-            <h3>Pomoc 24/7</h3>
+            <h3>Pomoc poza zajęciami</h3>
             <p>Możesz pisać między zajęciami - odpowiadam na pytania.</p>
           </div>
 
