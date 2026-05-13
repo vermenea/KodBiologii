@@ -1,4 +1,5 @@
 import { FaCheck } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function Pricing() {
   return (
@@ -20,9 +21,28 @@ export default function Pricing() {
         </div>
 
         {/* KARTY */}
-        <div className='pricing-grid'>
+        <motion.div
+          className='pricing-grid'
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.15,
+              },
+            },
+          }}
+        >
           {/* KARTA 1 */}
-          <div className='price-card'>
+          <motion.div
+            className='price-card'
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <div className='price-label'>Lekcja próbna</div>
 
             <h3>45 minut</h3>
@@ -42,10 +62,16 @@ export default function Pricing() {
                 <FaCheck /> omówienie celu
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* KARTA 2 */}
-          <div className='price-card featured'>
+          <motion.div
+            className='price-card featured'
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <div className='best-badge'>Najczęściej wybierane</div>
 
             <div className='price-label dark'>Korepetycje 1:1</div>
@@ -73,10 +99,16 @@ export default function Pricing() {
                 <FaCheck /> kontakt między zajęciami
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* KARTA 3 */}
-          <div className='price-card'>
+          <motion.div
+            className='price-card'
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <div className='price-label'>Zajęcia grupowe</div>
 
             <h3>60 minut</h3>
@@ -101,8 +133,8 @@ export default function Pricing() {
                 <FaCheck /> kontakt między zajęciami
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

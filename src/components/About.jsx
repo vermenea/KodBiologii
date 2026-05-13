@@ -1,13 +1,20 @@
 import { FaGraduationCap, FaBookOpen } from 'react-icons/fa';
 import { GiMicroscope } from 'react-icons/gi';
 import aboutImg from '../assets/about.webp';
+import { motion } from 'framer-motion';
 
 export default function AboutMe() {
   return (
     <section className='about-me'>
       <div className='about-container' id='about'>
         {/* // LEWA STRONA  // */}
-        <div className='about-left'>
+        <motion.div
+          className='about-left'
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <p className='about-top'>O MNIE</p>
 
           <h2>Kim jestem?</h2>
@@ -50,12 +57,18 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* // PRAWA STRONA  // */}
-        <div className='about-right'>
+        <motion.div
+          className='about-right'
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <img src={aboutImg} alt='Natalia' />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
