@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Benefits from './components/Benefits';
 import WhyMe from './components/WhyMe';
 import Pricing from './components/Pricing';
+import Contact from './components/ContactForm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <WhyMe />
       <Pricing />
+      <Contact />
       <Footer />
     </>
   );
