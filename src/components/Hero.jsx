@@ -41,7 +41,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
         >
-          Biologia <br />
+          Biologia, <br />
           <span>która w końcu ma sens</span>
         </motion.h1>
 

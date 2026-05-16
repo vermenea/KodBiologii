@@ -52,7 +52,7 @@ export default function Benefits() {
           >
             <FaCheckCircle className='card-icon' />
             <h3>Sprawdzanie prac</h3>
-            <p>Poprawiam Twoje odpowiedzi i pokazuję jak pisać pod klucz.</p>
+            <p>Poprawiam Twoje odpowiedzi i pokazuję, jak pisać pod klucz.</p>
           </motion.div>
 
           <motion.div
@@ -68,7 +68,7 @@ export default function Benefits() {
           >
             <FaComments className='card-icon' />
             <h3>Pomoc poza zajęciami</h3>
-            <p>Możesz pisać między zajęciami - odpowiadam na pytania.</p>
+            <p>Możesz pisać między zajęciami <br></br>- odpowiadam na pytania.</p>
           </motion.div>
 
           <motion.div
@@ -100,7 +100,7 @@ export default function Benefits() {
           >
             <FaChartLine className='card-icon' />
             <h3>Indywidualny plan</h3>
-            <p>Plan dopasowany do Twojego poziomu i celu.</p>
+            <p>Plan dopasowany do Twojego poziomu <br></br>i celu.</p>
           </motion.div>
 
           <motion.div
@@ -116,7 +116,7 @@ export default function Benefits() {
           >
             <FaLeaf className='card-icon' />
             <h3>Przyjazna atmosfera</h3>
-            <p>Bez stresu - uczysz się spokojnie i skutecznie.</p>
+            <p>Bez stresu - uczysz się spokojnie <br></br>i skutecznie.</p>
           </motion.div>
         </motion.div>
       </div>
