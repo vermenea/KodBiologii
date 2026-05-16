@@ -7,9 +7,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'framer-motion': ['framer-motion'],
-          'react-icons': ['react-icons'],
+        manualChunks: (id) => {
+          if (id.includes('framer-motion')) {
+            return 'framer-motion';
+          }
+          if (id.includes('react-icons')) {
+            return 'react-icons';
+          }
         },
       },
     },
