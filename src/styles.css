@@ -149,7 +149,7 @@ body {
 ========================================= */
 
 .hero {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -175,8 +175,7 @@ body {
 .hero-content {
   position: relative;
 
-  margin-top: -120px;
-  margin-left: 60px;
+  margin: -120px auto 0;
 
   max-width: 560px;
 
