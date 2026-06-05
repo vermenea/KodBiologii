@@ -18,7 +18,7 @@ export default function Footer() {
           <a href='/#o-mnie'>O mnie</a>
           <a href='/#offer'>Oferta</a>
           <a href='/#pricing'>Cennik</a>
-          <a href='/polityka-prywatnosci'>Polityka prywatności</a>
+          <a href='/#polityka-prywatnosci'>Polityka prywatności</a>
         </div>
 
         {/* PRAWA STRONA */}

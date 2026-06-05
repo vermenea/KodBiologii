@@ -14,18 +14,27 @@ const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 
 function App() {
   const normalizePath = (path) => path.replace(/\/+$/, '') || '/';
-  const [route, setRoute] = useState(() =>
-    normalizePath(window.location.pathname || '/'),
-  );
+  const getRoute = () => {
+    if (typeof window === 'undefined') return '/';
+    const hash = window.location.hash;
+    if (hash) return hash.replace(/^#/, '');
+    return normalizePath(window.location.pathname || '/');
+  };
+
+  const [route, setRoute] = useState(getRoute);
 
   useEffect(() => {
-    const handlePopState = () =>
-      setRoute(normalizePath(window.location.pathname || '/'));
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    const handleLocation = () => setRoute(getRoute());
+    window.addEventListener('popstate', handleLocation);
+    window.addEventListener('hashchange', handleLocation);
+    return () => {
+      window.removeEventListener('popstate', handleLocation);
+      window.removeEventListener('hashchange', handleLocation);
+    };
   }, []);
 
-  const isPrivacyPage = route === '/polityka-prywatnosci';
+  const isPrivacyPage =
+    route === 'polityka-prywatnosci' || route === '/polityka-prywatnosci';
 
   return (
     <>
