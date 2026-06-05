@@ -42,7 +42,12 @@ export default function CookieBanner() {
     setVisible(false);
   };
 
-  if (visible) {
+  const rejectCookies = () => {
+    localStorage.setItem(COOKIE_KEY, 'rejected');
+    setVisible(false);
+  };
+
+  if (!visible) {
     return null;
   }
 
@@ -67,7 +72,9 @@ export default function CookieBanner() {
       </div>
 
       <div className='cookie-buttons'>
-        <button className='cookie-reject'>Odrzuć</button>
+        <button className='cookie-reject' onClick={rejectCookies}>
+          Odrzuć
+        </button>
 
         <button className='cookie-accept' onClick={acceptCookies}>
           Akceptuję
