@@ -869,7 +869,7 @@ a[href^='mailto:']:hover {
 
   .nav-container {
     justify-content: space-between;
-    /* padding: 0 20px; */
+    padding: 0 20px;
   }
 
   .logo {
@@ -1567,6 +1567,79 @@ button:disabled {
 
 .privacy-back:hover {
   opacity: 0.88;
+}
+
+@media (max-width: 1024px) {
+  .privacy-policy {
+    padding: 80px 20px;
+  }
+
+  .privacy-container {
+    max-width: 900px;
+    gap: 24px;
+    padding: 0 10px;
+  }
+
+  .privacy-header {
+    max-width: 100%;
+  }
+
+  .privacy-policy h2 {
+    font-size: 2rem;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.15rem;
+  }
+
+  .privacy-policy p,
+  .privacy-policy li {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .privacy-section ul {
+    padding-left: 18px;
+  }
+
+  .privacy-back {
+    padding: 13px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-policy {
+    padding: 60px 16px 40px;
+  }
+
+  .privacy-container {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .privacy-policy h2 {
+    font-size: 1.85rem;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.05rem;
+  }
+
+  .privacy-policy p,
+  .privacy-policy li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .privacy-section ul {
+    padding-left: 16px;
+  }
+
+  .privacy-back {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+  }
 }
 
 .cookie-card {
