@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* LOGO */}
 
         <motion.a
-          href='/strona-głowna'
+          href='/'
           whileHover={{
             scale: 1.03,
           }}
@@ -32,7 +32,7 @@ export default function Navbar() {
 
         <div className='menu'>
           <motion.a
-            href='/strona-głowna'
+            href='/'
             whileHover={{ y: -2 }}
             transition={{ duration: 0.2 }}
           >
@@ -40,7 +40,7 @@ export default function Navbar() {
           </motion.a>
 
           <motion.a
-            href='/o-mnie'
+            href='/#o-mnie'
             whileHover={{ y: -2 }}
             transition={{ duration: 0.2 }}
           >
@@ -48,7 +48,7 @@ export default function Navbar() {
           </motion.a>
 
           <motion.a
-            href='/oferta'
+            href='/#oferta'
             whileHover={{ y: -2 }}
             transition={{ duration: 0.2 }}
           >
@@ -56,7 +56,7 @@ export default function Navbar() {
           </motion.a>
 
           <motion.a
-            href='/cennik'
+            href='/#cennik'
             whileHover={{ y: -2 }}
             transition={{ duration: 0.2 }}
           >
@@ -64,7 +64,7 @@ export default function Navbar() {
           </motion.a>
 
           <motion.a
-            href='/kontakt'
+            href='/#kontakt'
             whileHover={{ y: -2 }}
             transition={{ duration: 0.2 }}
           >
@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* BUTTON */}
 
         <motion.a
-          href='#contact'
+          href='/#kontakt'
           className='btn'
           whileHover={{
             scale: 1.04,

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Benefits() {
   return (
-    <section className='benefits' id='offer'>
+    <section className='benefits' id='oferta'>
       <div className='container'>
         <p className='benefits-top'>CO ZAWIERAJĄ KOREPETYCJE?</p>
         <h2>Kompleksowe wsparcie na każdym etapie</h2>

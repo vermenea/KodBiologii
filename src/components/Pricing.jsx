@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Pricing() {
   return (
-    <section className='pricing' id='pricing'>
+    <section className='pricing' id='cennik'>
       <div className='container'>
         {/* TOP */}
         <div className='pricing-header'>

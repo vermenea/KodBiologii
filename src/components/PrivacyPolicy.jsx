@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function PrivacyPolicy() {
   return (
-    <section className='privacy-policy' id='privacy-policy'>
+    <section className='privacy-policy' id='polityka-prywatności'>
       <div className='privacy-container'>
         <motion.div
           className='privacy-header'

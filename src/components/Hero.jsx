@@ -4,7 +4,7 @@ import Features from './Features';
 
 export default function Hero() {
   return (
-    <section className='hero' id='glowna'>
+    <section className='hero' id='strona-główna'>
       {/* IMAGE */}
 
       <motion.div
