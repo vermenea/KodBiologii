@@ -42,36 +42,36 @@ export default function CookieBanner() {
     setVisible(false);
   };
 
-  if (!visible) {
+  if (visible) {
     return null;
   }
 
   return (
     <motion.div
-      className='cookie-banner'
-      initial={{ y: 60, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.45, ease: 'easeOut' }}
+      className='cookie-card'
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
     >
-      <div className='cookie-banner-content'>
-        <div>
-          <p className='cookie-banner-title'>Cookies</p>
-          <p className='cookie-banner-text'>
-            Ta strona używa niewielkiej ilości plików cookies do analizy ruchu.
-          </p>
-        </div>
+      <div className='cookie-icon'>🍪</div>
 
-        <div className='cookie-banner-actions'>
-          <a href='/privacy-policy' className='cookie-banner-link'>
-            Polityka prywatności
-          </a>
-          <button
-            className='cookie-banner-button accept'
-            onClick={acceptCookies}
-          >
-            Akceptuję
-          </button>
-        </div>
+      <div className='cookie-content'>
+        <h4>Szanujemy Twoją prywatność</h4>
+
+        <p>
+          Używamy plików cookies wyłącznie do analizy ruchu i poprawy działania
+          strony.
+        </p>
+
+        <a href='/polityka-prywatności'>Polityka prywatności</a>
+      </div>
+
+      <div className='cookie-buttons'>
+        <button className='cookie-reject'>Odrzuć</button>
+
+        <button className='cookie-accept' onClick={acceptCookies}>
+          Akceptuję
+        </button>
       </div>
     </motion.div>
   );

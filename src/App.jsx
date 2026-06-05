@@ -25,7 +25,7 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const isPrivacyPage = route === '/privacy-policy';
+  const isPrivacyPage = route === '/polityka-prywatnosci';
 
   return (
     <>

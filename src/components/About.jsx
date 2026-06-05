@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function AboutMe() {
   return (
     <section className='about-me'>
-      <div className='about-container' id='about'>
+      <div className='about-container' id='o-mnie'>
         {/* // LEWA STRONA  // */}
         <motion.div
           className='about-left'

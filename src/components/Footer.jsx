@@ -14,11 +14,11 @@ export default function Footer() {
         <div className='footer-links'>
           <h4>Nawigacja</h4>
 
-          <a href='/#home'>Strona główna</a>
-          <a href='/#about'>O mnie</a>
+          <a href='/strona-glowna'>Strona główna</a>
+          <a href='/#o-mnie'>O mnie</a>
           <a href='/#offer'>Oferta</a>
           <a href='/#pricing'>Cennik</a>
-          <a href='/privacy-policy'>Polityka prywatności</a>
+          <a href='/polityka-prywatnosci'>Polityka prywatności</a>
         </div>
 
         {/* PRAWA STRONA */}
