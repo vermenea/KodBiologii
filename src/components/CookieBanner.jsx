@@ -68,7 +68,7 @@ export default function CookieBanner() {
           strony.
         </p>
 
-        <a href='/#polityka-prywatnosci'>Polityka prywatności</a>
+        <a href='#polityka-prywatnosci'>Polityka prywatności</a>
       </div>
 
       <div className='cookie-buttons'>
