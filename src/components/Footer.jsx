@@ -14,7 +14,7 @@ export default function Footer() {
         <div className='footer-links'>
           <h4>Nawigacja</h4>
 
-          <a href='#strona-główna'>Strona główna</a>
+          <a href='/'>Strona główna</a>
           <a href='#o-mnie'>O mnie</a>
           <a href='#oferta'>Oferta</a>
           <a href='#cennik'>Cennik</a>
